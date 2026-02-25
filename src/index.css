@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cinzel", serif;
+  --font-body: "Lora", serif;
+  --color-church-navy: #0F172A;
+  --color-church-gold: #C5A059;
+  --color-church-cream: #FDFCFB;
+  --color-church-red: #7F1D1D;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-church-cream);
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  color: var(--color-church-navy);
+  margin: 0;
+}
+
+.sacred-border {
+  border: 1px solid rgba(197, 160, 89, 0.2);
+  position: relative;
+  background: white;
+}
+
+.sacred-border::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 1px solid rgba(197, 160, 89, 0.08);
+  pointer-events: none;
+}
+
+.gold-gradient-btn {
+  background: linear-gradient(135deg, #C5A059 0%, #A37F3D 100%);
+  color: white;
+  box-shadow: 0 15px 30px -10px rgba(163, 127, 61, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gold-gradient-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -12px rgba(163, 127, 61, 0.6);
+}
+
+.video-frame {
+  box-shadow: 0 40px 80px -20px rgba(15, 23, 42, 0.25);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.section-divider {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-church-gold), transparent);
+  margin: 1.5rem auto;
+}
+
+.vitalicio-seal {
+  background: rgba(197, 160, 89, 0.1);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+  color: var(--color-church-gold);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+wistia-player[media-id='jf7qaripza']:not(:defined) { 
+  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/jf7qaripza/swatch'); 
+  display: block; 
+  filter: blur(5px); 
+  padding-top:177.78%; 
+}
