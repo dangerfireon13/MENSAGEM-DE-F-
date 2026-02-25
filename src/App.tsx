@@ -127,14 +127,19 @@ export default function App() {
               <div className="vitalicio-seal inline-block">Acesso Vitalício Liberado</div>
             </div>
 
-            <button className="gold-gradient-btn w-full py-7 rounded-xl text-xl md:text-2xl font-black tracking-widest uppercase transition-all flex items-center justify-center gap-3">
+            <a 
+              href="https://ggcheckout.com.br/checkout/v5/Vito2nIyjUM6y5JsIiAC"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gold-gradient-btn w-full py-7 rounded-xl text-xl md:text-2xl font-black tracking-widest uppercase transition-all flex items-center justify-center gap-3 no-underline"
+            >
               SIM, QUERO ACESSO IMEDIATO <ArrowRight className="w-6 h-6" />
-            </button>
+            </a>
 
             <div className="flex flex-col items-center gap-4">
               <div className="flex items-center gap-2 text-church-gold font-bold text-[10px] tracking-widest uppercase">
                 <ShieldCheck className="w-4 h-4" />
-                Pagamento Seguro • Receba no seu E-mail
+                Pagamento Seguro • Receba no seu Whatsapp
               </div>
             </div>
           </div>
