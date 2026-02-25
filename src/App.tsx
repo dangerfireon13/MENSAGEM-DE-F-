@@ -35,6 +35,27 @@ export default function App() {
           </motion.div>
         </header>
 
+        {/* Exclusive Notice - Refined */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="mb-10 flex justify-center"
+        >
+          <div className="inline-flex items-center gap-3 bg-church-navy text-white px-6 py-3 rounded-full shadow-lg border border-church-gold/30">
+            <Star className="w-4 h-4 text-church-gold fill-church-gold animate-pulse" />
+            <p className="text-[10px] md:text-xs font-bold tracking-widest uppercase">
+              Acesso Exclusivo: <span className="text-church-gold">Seguidores do CASALLMODERNO</span>
+            </p>
+          </div>
+        </motion.div>
+
+        <div className="text-center mb-12">
+          <p className="text-church-navy/40 text-[10px] uppercase tracking-[0.3em] font-bold italic">
+            Esta gravação não está disponível no YouTube ou em canais abertos.
+          </p>
+        </div>
+
         {/* Emotional Hook Section */}
         <section className="text-center mb-10">
           <motion.div
@@ -47,16 +68,25 @@ export default function App() {
               Seu relacionamento não é <br className="hidden md:block" />
               mais como <span className="text-church-red italic">antes?</span>
             </h2>
-            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-church-navy/60 text-sm md:text-base font-medium">
-              <span className="flex items-center gap-1.5">As conversas viraram discussões?</span>
-              <span className="flex items-center gap-1.5">•</span>
-              <span className="flex items-center gap-1.5">O silêncio está aumentando?</span>
-              <span className="flex items-center gap-1.5">•</span>
-              <span className="flex items-center gap-1.5">Sente que algo se perdeu?</span>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-church-navy/70 text-sm md:text-base font-medium italic">
+              <span className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-church-red" />
+                As conversas viraram discussões?
+              </span>
+              <span className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-church-red" />
+                O silêncio está aumentando?
+              </span>
+              <span className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-church-red" />
+                Sente que algo se perdeu?
+              </span>
             </div>
-            <p className="text-church-navy/80 text-lg md:text-xl max-w-2xl mx-auto pt-2">
-              Esta live foi gravada para casais que querem <span className="font-bold">reconstruir o amor</span> sobre a rocha da fé.
-            </p>
+            <div className="pt-4">
+              <p className="text-church-navy/90 text-lg md:text-2xl max-w-3xl mx-auto leading-relaxed">
+                Esta live foi gravada exclusivamente para <span className="text-church-navy font-black underline decoration-church-gold decoration-4 underline-offset-4">casais</span> que decidiram reconstruir sua história sobre a rocha da fé.
+              </p>
+            </div>
           </motion.div>
         </section>
 
